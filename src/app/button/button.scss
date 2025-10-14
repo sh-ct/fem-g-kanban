@@ -1,0 +1,43 @@
+@use "mixins" as *;
+
+.btn {
+  border-radius: 100vw; // for pill shape
+  border: none;
+  padding: 1rem 2rem; // guessing, could use refining
+  font-weight: var(--font-bold);
+  width: 100%;
+
+
+  &-sm {
+    padding: 0.5rem 2rem;
+  }
+
+  &-primary {
+    background-color: var(--primary);
+    color: var(--neutral-0);
+
+    @include hover {
+      background-color: var(--primary-emphasis);
+    }
+  }
+
+  &-secondary {
+    background-color: var(--secondary);
+    color: var(--primary);
+
+    @include hover {
+      background-color: var(--secondary-emphasis);
+    }
+
+  }
+
+  &-danger {
+    background-color: var(--danger);
+    color: var(--neutral-0);
+
+    @include hover {
+      background-color: var(--danger-emphasis);
+    }
+  }
+
+}
