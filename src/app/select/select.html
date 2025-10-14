@@ -1,0 +1,38 @@
+<div
+  class="select"
+  [class.select-active]="pickerVisible()"
+  (click)="togglePicker()"
+>
+
+
+  @if (value()) {
+    <span class="select-selected">
+    {{ value() }}
+
+    </span>
+  } @else {
+    <span class="select-placeholder">
+    {{ placeholder() }}
+
+    </span>
+  }
+
+  <i class="select-icon">
+    <img [ngSrc]="'icon-chevron-down.svg'" width="10" height="7" alt="select dropdown icon">
+  </i>
+
+  <div
+    class="select-overlay"
+    [class.select-overlay-visible]="pickerVisible()"
+    (click)="$event.stopPropagation()"
+  >
+    <ul class="select-list text-secondary-color">
+      @for (choice of choices(); track $index) {
+        <li class="select-list-item" (click)="selectChoice(choice)">
+          {{ choice }}
+        </li>
+      }
+    </ul>
+  </div>
+
+</div>
