@@ -1,0 +1,20 @@
+<div
+  class="input-wrapper"
+  [class.input-invalid]="errors()?.length"
+>
+  <input
+    #input
+    [(ngModel)]="value"
+    type="text"
+    class="input"
+    [disabled]="disabled()"
+    [placeholder]="placeholder()"
+  />
+
+  @if (errors().length && input.classList.contains('ng-dirty')) {
+    <span class="error-message input-error">
+      {{ errors()[0].message }}
+    </span>
+  }
+
+</div>
