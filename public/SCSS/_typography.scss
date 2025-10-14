@@ -1,0 +1,48 @@
+.text-body {
+  font-family: var(--plus-jakarta-sans), sans-serif;
+  font-size: var(--text-md);
+  font-weight: var(--font-body);
+  line-height: var(--line-lg);
+}
+
+.text-accent {
+  font-weight: var(--font-bold);
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+}
+
+.text-secondary-color {
+  color: var(--text-secondary);
+}
+
+.heading-1 {
+  font-weight: var(--font-bold);
+  font-size: var(--text-2xl);
+  line-height: var(--line-xl);
+}
+
+.heading-2 {
+  font-weight: var(--font-bold);
+  font-size: var(--text-xl);
+  line-height: var(--line-lg);
+}
+
+.heading-3 {
+  font-weight: var(--font-bold);
+  font-size: var(--text-lg);
+  line-height: var(--line-md);
+}
+
+.heading-4 {
+  font-weight: var(--font-bold);
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+  letter-spacing: var(--kerning-lg);
+}
+
+.error-message {
+  color: var(--danger);
+  font-weight: var(--font-bold);
+  font-size: var(--text-sm);
+  line-height: var(--line-sm);
+}

@@ -1,0 +1,51 @@
+:root {
+
+  // Colours
+
+  --purple-100: rgba(99, 95, 199, 0.10);
+  --purple-200: rgba(99, 95, 199, 0.25);
+  --purple-300: rgb(168, 164, 255);
+  --purple-400: rgb(99, 95, 199);
+
+
+
+  --red-300: rgb(255, 152, 152);
+  --red-400: rgb(234, 85, 85);
+
+  --neutral-0: #FFFFFF;
+  --neutral-100: #F4F7FD;
+  --neutral-200: #E4EBFA;
+  --neutral-300: rgb(130, 143, 163);
+  --neutral-300-25: rgba(130, 143, 163, 0.25);
+  --neutral-400: #3E3F3E;
+  --neutral-500: #2B2C37;
+  --neutral-600: #20212C;
+  --neutral-800: #000112;
+
+  // Type
+
+  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+
+  --font-body: 500;
+  --font-bold: 700;
+
+  --text-sm: 12px;
+  --text-md: 13px;
+  --text-lg: 15px;
+  --text-xl: 18px;
+  --text-2xl: 24px;
+
+  --line-sm: 15px;
+  --line-md: 19px;
+  --line-lg: 23px;
+  --line-xl: 30px;
+
+  --kerning-lg: 2.4px;
+
+  // Borders
+
+  --border-radius: 4px;
+  --border-width: 1px;
+  --border-style: solid;
+
+}

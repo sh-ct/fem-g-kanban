@@ -1,0 +1,26 @@
+:root {
+  --primary: var(--purple-400);
+  --primary-emphasis: var(--purple-300);
+
+  --danger: var(--red-400);
+  --danger-emphasis: var(--red-300);
+
+  --secondary: var(--purple-100);
+  --secondary-emphasis: var(--purple-200);
+
+  --text-secondary: var(--neutral-300);
+
+  --surface-0: var(--neutral-0);
+  --surface-100: var(--neutral-100);
+  --surface-200: var(--neutral-200);
+
+
+  --border-color: var(--neutral-300-25);
+  --border-color-active: var(--primary);
+
+
+}
+
+.dark {
+
+}

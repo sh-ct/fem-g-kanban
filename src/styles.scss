@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+// 1. Abstracts
+@use "../public/SCSS/normalise";
+@use "../public/SCSS/variables";
+@use "../public/SCSS/mixins";
+
+
+// 2. Base styles
+@use "../public/SCSS/fonts";
+@use "../public/SCSS/typography";
+@use "../public/SCSS/theme";
+
+
+
+
+
+body {
+  @extend .text-body;
+}

@@ -1,0 +1,19 @@
+
+
+@mixin hover {
+  &:is(:hover, :focus-visible) {
+    @content;
+  }
+}
+
+@mixin border(
+  $border-width: var(--border-width),
+  $border-style: var(--border-style),
+  $border-color: var(--border-color),
+  $border-radius: var(--border-radius),
+) {
+  border-width: $border-width;
+  border-style: $border-style;
+  border-color: $border-color;
+  border-radius: $border-radius;
+}
