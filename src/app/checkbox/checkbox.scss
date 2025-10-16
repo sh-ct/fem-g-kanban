@@ -1,0 +1,42 @@
+@use "mixins" as *;
+
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  @include border($border-radius: var(--border-radius-sm));
+  //transform: translateY(-0.075em); // TODO: check if needed seems to offset in a bad way
+  background: var(--checkbox-background);
+
+  // Alignment of check inside checkbox
+  display: grid;
+  place-content: center;
+
+  &:checked {
+    border-color: var(--primary);
+    background: var(--checkbox-background-checked);
+
+    &:before {
+      transform: scale(1);
+    }
+  }
+
+  &::before {
+    content: "";
+    transform: scale(0); // ensures the icon is hidden when unchecked even if disabled
+    width: 10px;
+    height: 8px;
+    background: url('../../../public/icon-check.svg');
+  }
+
+  &:disabled {
+    border-color: var(--border-color);
+    background: var(--checkbox-background-disabled);
+    cursor: not-allowed;
+
+    &::before {
+      filter: invert(0.3); // makes the icon grey when disabled
+    }
+  }
+}
+
+
