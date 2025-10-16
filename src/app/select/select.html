@@ -28,7 +28,7 @@
   >
     <ul class="select-list text-secondary-color">
       @for (choice of choices(); track $index) {
-        <li class="select-list-item" (click)="selectChoice(choice)">
+        <li class="select-list-item rounded" (click)="selectChoice(choice)">
           {{ choice }}
         </li>
       }
