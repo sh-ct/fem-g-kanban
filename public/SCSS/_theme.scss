@@ -19,6 +19,14 @@
   --border-color-active: var(--primary);
 
 
+  --checkbox-background: var(--neutral-0);
+  --checkbox-background-checked: var(--primary);
+  --checkbox-background-disabled: var(--neutral-200);
+
+  --subtask-background: var(--neutral-100);
+  --subtask-background-hover: var(--purple-200);
+  --subtask-background-checked: var(--neutral-100);
+  --subtask-background-checked-hover: var(--purple-200);
 }
 
 .dark {
