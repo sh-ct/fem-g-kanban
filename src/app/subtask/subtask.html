@@ -1,0 +1,9 @@
+<div class="subtask text-accent" [class.subtask-completed]="subtask().isCompleted">
+
+  <app-checkbox [control]="form.isCompleted"/>
+
+  <span class="subtask-title">
+    {{ subtask().title }}
+  </span>
+
+</div>
