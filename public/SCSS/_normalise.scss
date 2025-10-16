@@ -81,7 +81,6 @@ strong {
 }
 
 
-
 /*
   Add the correct font size in all browsers.
 */
@@ -145,8 +144,11 @@ summary {
 */
 ol,
 ul,
+li,
 menu {
   list-style: none;
+  //padding: 0;
+  //margin: 0;
 }
 
 /*
@@ -313,4 +315,15 @@ input:where([type='button'], [type='reset'], [type='submit']),
 
 [hidden]:where(:not([hidden='until-found'])) {
   display: none !important;
+}
+
+/*
+Extensions
+*/
+
+// Checkboxes
+input[type="checkbox"] {
+  -webkit-appearance: none; // Reset some styles
+  appearance: none; // Remove most all native input styles
+  margin: 0; // Not removed via appearance
 }
