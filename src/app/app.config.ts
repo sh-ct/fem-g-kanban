@@ -2,7 +2,7 @@ import {
   ApplicationConfig,
   isDevMode,
   provideBrowserGlobalErrorListeners,
-  provideZoneChangeDetection
+  provideZoneChangeDetection, provideZonelessChangeDetection
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
@@ -16,7 +16,7 @@ import { provideStoreDevtools } from '@ngrx/store-devtools';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideZonelessChangeDetection(),
     provideRouter(routes),
     provideStore(),
     provideState({ name: fromBoards.featureKey, reducer: fromBoards.reducer, }),

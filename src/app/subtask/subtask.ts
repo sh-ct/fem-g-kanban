@@ -1,5 +1,5 @@
 import { Component, input, model } from '@angular/core';
-import { Control, form, FormCheckboxControl } from '@angular/forms/signals';
+import { Field, form, FormCheckboxControl } from '@angular/forms/signals';
 import { Checkbox } from '../checkbox/checkbox';
 import { SubtaskData } from '../../state/boards/boards.interfaces';
 
@@ -7,7 +7,7 @@ import { SubtaskData } from '../../state/boards/boards.interfaces';
   selector: 'app-subtask',
   imports: [
     Checkbox,
-    Control
+    Field,
   ],
   templateUrl: './subtask.html',
   styleUrl: './subtask.scss'
