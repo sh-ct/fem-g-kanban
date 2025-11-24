@@ -1,0 +1,21 @@
+<aside class="sidebar">
+
+  <app-nav/>
+
+  <div class="sidebar-ui">
+    <app-theme-selector/>
+  </div>
+
+
+  <div class="sidebar-ui sidebar-toggle text-secondary-color">
+
+    <app-icon type="sidebar-hide"/>
+
+    <span class="heading-3" (click)="hide.emit()">
+      Hide Sidebar
+    </span>
+
+  </div>
+
+
+</aside>

@@ -1,0 +1,31 @@
+@use "mixins" as *;
+@use "variables" as var;
+
+.sidebar {
+  display: grid;
+  height: calc(100vh - var(--header-height));
+  gap: 0.5rem 0;
+  grid-template-rows: 1fr auto auto;
+  @include border($border-width: 0 var.$border-width 0 0, $border-radius: 0);
+}
+
+.sidebar-inline-offset {
+  padding-inline: var.$sidebar-padding-inline;
+}
+
+.sidebar-toggle {
+  margin-block-end: var.$footer-height;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+
+  @include hover {
+    background: var.$neutral-100;
+  }
+}
+
+.sidebar-ui {
+  height: 3rem;
+  padding-inline: var.$sidebar-padding-inline;
+}

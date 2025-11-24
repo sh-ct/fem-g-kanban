@@ -1,7 +1,7 @@
-import { Component, input, model, OnChanges, OnInit } from '@angular/core';
+import { Component, input, model } from '@angular/core';
 import { Control, form, FormCheckboxControl } from '@angular/forms/signals';
-import { SubtaskData } from '../app.interfaces';
 import { Checkbox } from '../checkbox/checkbox';
+import { SubtaskData } from '../../state/boards/boards.interfaces';
 
 @Component({
   selector: 'app-subtask',

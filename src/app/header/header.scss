@@ -1,0 +1,15 @@
+@use "mixins" as *;
+@use "variables" as var;
+
+:host {
+  position: sticky;
+  top: 0;
+  left: var(--logo-width);
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.5rem;
+
+  @include border($border-width: 0 0 var.$border-width, $border-radius: 0);
+}

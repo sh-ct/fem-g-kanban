@@ -1,43 +1,64 @@
-@use "mixins" as *;
+@use "mixins";
+@use "variables" as *;
 
 .btn {
-  border-radius: 100vw; // for pill shape
-  border: none;
-  padding: 1rem 2rem; // guessing, could use refining
-  font-weight: var(--font-bold);
+  border-radius: $border-radius-pill; // for pill shape
+  border: $btn-border;
+  padding: $btn-padding; // guessing, could use refining
+  font-weight: $btn-font-weight;
   width: 100%;
 
+  // Modifier Classes
 
-  &-sm {
-    padding: 0.5rem 2rem;
+  &-disabled {
+    cursor: not-allowed;
   }
 
-  &-primary {
-    background-color: var(--primary);
-    color: var(--neutral-0);
+  &-sm {
+    padding: $btn-padding-sm;
+  }
 
-    @include hover {
-      background-color: var(--primary-emphasis);
+  // Theme Styles
+
+  &-primary {
+    background-color: var(--btn-background-primary);
+    color: var(--btn-color-primary);
+
+    @include mixins.hover {
+      background-color: var(--btn-background-hover-primary);
     }
+
+    &.btn-disabled {
+    background: var(--btn-background-disabled-primary);
+  }
   }
 
   &-secondary {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: var(--btn-background-secondary);
+    color: var(--btn-color-secondary);
 
-    @include hover {
-      background-color: var(--secondary-emphasis);
+    @include mixins.hover {
+      background-color: var(--btn-background-hover-secondary);
+    }
+
+    &.btn-disabled {
+      background-color: var(--btn-background-disabled-secondary);
     }
 
   }
 
   &-danger {
-    background-color: var(--danger);
-    color: var(--neutral-0);
+    background-color: var(--btn-background-secondary);
+    color: var(--btn-color-danger);
 
-    @include hover {
-      background-color: var(--danger-emphasis);
+    @include mixins.hover {
+      background-color: var(--btn-background-hover-danger);
+    }
+
+    &.btn-disabled {
+      background-color: var(--btn-background-disabled-danger) ;
     }
   }
 
 }
+
