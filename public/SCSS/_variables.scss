@@ -1,52 +1,94 @@
-:root {
+// Colours
 
-  // Colours
+$purple: rgb(99, 95, 199);
+$purple-light: rgb(168, 164, 255);
 
-  --purple-100: rgba(99, 95, 199, 0.10);
-  --purple-200: rgba(99, 95, 199, 0.25);
-  --purple-300: rgb(168, 164, 255);
-  --purple-400: rgb(99, 95, 199);
+$red-light: rgb(255, 152, 152);
+$red: rgb(234, 85, 85);
+
+$neutral-0: rgb(255, 255, 255); // #FFFFFF
+$neutral-100: rgb(244, 247, 253); // #F4F7FD
+$neutral-200: rgb(228, 235, 250); // #E4EBFA
+$neutral-300: rgb(130, 143, 163); // #828fa3
+$neutral-400: rgb(62, 63, 62); // #3E3F3E
+$neutral-500: rgb(43, 44, 55); // #2B2C37
+$neutral-600: rgb(32, 33, 44); // #20212C
+$neutral-800: rgb(0, 1, 18); // #000112
+
+/*
+  Theme
+*/
+
+$primary: $purple;
+$primary-emphasis: $purple-light;
+$primary-not-emphasis: rgba($primary, 0.25);
+
+$danger: $red;
+$danger-emphasis: $red-light;
+$danger-not-emphasis: rgba($danger, 0.25);
+
+$secondary: rgba($purple, 0.1);
+$secondary-emphasis: rgba($purple, 0.25);
+$secondary-not-emphasis: rgba($secondary, 0.25);
+
+$text-secondary: $neutral-300;
 
 
+// Type
 
-  --red-300: rgb(255, 152, 152);
-  --red-400: rgb(234, 85, 85);
+$plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 
-  --neutral-0: #FFFFFF;
-  --neutral-100: #F4F7FD;
-  --neutral-200: #E4EBFA;
-  --neutral-300: rgb(130, 143, 163);
-  --neutral-300-25: rgba(130, 143, 163, 0.25);
-  --neutral-400: #3E3F3E;
-  --neutral-500: #2B2C37;
-  --neutral-600: #20212C;
-  --neutral-800: #000112;
+$font-body: 500;
+$font-bold: 700;
 
-  // Type
+$text-sm: 12px;
+$text-md: 13px;
+$text-lg: 15px;
+$text-xl: 18px;
+$text-2xl: 24px;
 
-  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+$line-sm: 15px;
+$line-md: 19px;
+$line-lg: 23px;
+$line-xl: 30px;
 
-  --font-body: 500;
-  --font-bold: 700;
+$kerning-lg: 2.4px;
 
-  --text-sm: 12px;
-  --text-md: 13px;
-  --text-lg: 15px;
-  --text-xl: 18px;
-  --text-2xl: 24px;
+// Borders
 
-  --line-sm: 15px;
-  --line-md: 19px;
-  --line-lg: 23px;
-  --line-xl: 30px;
+$border-radius-sm: 2px;
+$border-radius: 4px;
+$border-radius-pill: 24px;
 
-  --kerning-lg: 2.4px;
+$border-width: 1px;
+$border-style: solid;
 
-  // Borders
+$border-color: rgba($neutral-300, 0.25);
+$border-color-active: $primary;
 
-  --border-radius-sm: 2px;
-  --border-radius: 4px;
-  --border-width: 1px;
-  --border-style: solid;
 
-}
+/*
+  Components
+*/
+
+// Layout
+
+$sidebar-padding-inline: 1.5rem;
+$footer-height: 2rem;
+
+// Checkbox
+
+$checkbox-size: 1rem;
+
+// Button
+
+$btn-border: none;
+$btn-padding: 1rem 1.5rem;
+$btn-font-weight: $font-bold;
+$btn-padding-sm: 0.5rem 1.5rem;
+
+// Inputs
+
+$input-height: 2.5rem;
+$input-padding: 0 1rem;
+

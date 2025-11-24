@@ -1,0 +1,38 @@
+<div class="boards-list">
+  <h3 class="boards-heading heading-4">
+    ALL BOARDS
+    ({{ boardCount() }})
+  </h3>
+
+  <nav class="boards-nav">
+    <ul class="boards-nav-list nav">
+
+      @for (route of boards(); track route.id) {
+        @let selected = isBoardSelected(route.id);
+        <li
+          class="nav-item"
+          [class.nav-item-active]="selected"
+          (click)="selectBoard(route.id)"
+        >
+          <app-icon type="board" [theme]="selected ? 'white' : 'secondary'"/>
+
+
+          <span>
+            {{ route.name }}
+          </span>
+        </li>
+      }
+
+      <li class="nav-item nav-item-create">
+
+        <app-icon type="board" theme="primary"/>
+
+
+        <span>
+          + Create New Board
+        </span>
+      </li>
+
+    </ul>
+  </nav>
+</div>

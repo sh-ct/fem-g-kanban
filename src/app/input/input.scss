@@ -1,28 +1,29 @@
-@use "mixins" as *;
+@use "mixins";
+@use "variables" as *;
 
 .input {
   border: none;
   outline: none;
   flex-grow: 3;
 
-  @include hover {
+  @include mixins.hover {
     outline: none;
   }
 
   &-invalid:has(.ng-dirty) {
-    border-color: var(--danger);
+    border-color: var(--input-border-color-error);
   }
 
   &-wrapper {
     display: flex;
     align-items: center;
-    height: 2.5rem;
-    padding: 0 1rem;
+    height: $input-height;
+    padding: $input-padding;
 
-    @include border;
+    @include mixins.border($border-color: var(--input-border-color));
 
     &:has(:focus, :focus-within) {
-      border-color: var(--border-color-active);
+      border-color: var(--input-border-color-active);
     }
 
   }

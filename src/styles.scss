@@ -17,3 +17,20 @@
 body {
   @extend .text-body;
 }
+
+
+/*
+  Utility Classes - TODO: Put them into better more relevant files
+*/
+
+.rounded {
+  border-radius: variables.$border-radius;
+}
+
+.border {
+  @include mixins.border;
+}
+
+.sidebar-hidden {
+  --sidebar-width: 0;
+}

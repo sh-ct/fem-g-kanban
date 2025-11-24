@@ -1,34 +1,66 @@
+@use "variables" as *;
+
 :root {
-  --primary: var(--purple-400);
-  --primary-emphasis: var(--purple-300);
 
-  --danger: var(--red-400);
-  --danger-emphasis: var(--red-300);
+  --surface-0: #{$neutral-0};
+  --surface-100: #{$neutral-100};
+  --surface-200: #{$neutral-200};
 
-  --secondary: var(--purple-100);
-  --secondary-emphasis: var(--purple-200);
+// Layout
 
-  --text-secondary: var(--neutral-300);
+  --header-height: 6rem;
+  --sidebar-width: 18.75rem;
+  --logo-width: 18.75rem;
 
-  --surface-0: var(--neutral-0);
-  --surface-100: var(--neutral-100);
-  --surface-200: var(--neutral-200);
+  --sidebar-toggle-on-background: #{$primary};
+  --sidebar-toggle-on-hover-background: #{$primary-emphasis};
 
+// Nav
 
-  --border-color: var(--neutral-300-25);
-  --border-color-active: var(--primary);
+  --nav-background-active: #{$primary};
+  --nav-background-active-hover: #{$primary-emphasis};
+  --nav-background-hover: #{$neutral-100};
+  --nav-backgounrd-create-hover: #{$primary-emphasis};
+  --nav-color: #{$text-secondary};
+  --nav-color-active: #{$neutral-0};
+  --nav-color-create: #{$primary};
 
+// Checkbox
 
-  --checkbox-background: var(--neutral-0);
-  --checkbox-background-checked: var(--primary);
-  --checkbox-background-disabled: var(--neutral-200);
+  --checkbox-background: #{$neutral-0};
+  --checkbox-background-checked: #{$primary};
+  --checkbox-background-disabled: #{$neutral-200};
+  --checkbox-border-checked: #{$primary};
+  --checkbox-border-disabled: #{$border-color};
 
-  --subtask-background: var(--neutral-100);
-  --subtask-background-hover: var(--purple-200);
-  --subtask-background-checked: var(--neutral-100);
-  --subtask-background-checked-hover: var(--purple-200);
-}
+// Subtask
 
-.dark {
+  --subtask-background: #{$neutral-100};
+  --subtask-background-hover: #{$primary-not-emphasis};
+  --subtask-background-checked: #{$neutral-100};
+  --subtask-background-checked-hover: #{$primary-not-emphasis};
+
+// Button
+
+  --btn-background-primary: #{$primary};
+  --btn-background-hover-primary: #{$primary-emphasis};
+  --btn-background-disabled-primary: #{$primary-not-emphasis};
+  --btn-color-primary: #{$neutral-0};
+
+  --btn-background-secondary: #{$secondary-emphasis};
+  --btn-background-hover-secondary: #{$secondary-emphasis};
+  --btn-background-disabled-secondary: #{$secondary-not-emphasis};
+  --btn-color-secondary: #{$primary};
+
+  --btn-background-danger: #{$danger-emphasis};
+  --btn-background-hover-danger: #{$danger-emphasis};
+  --btn-background-disabled-danger: #{$danger-not-emphasis};
+  --btn-color-danger: #{$neutral-0};
+
+// Inputs
+
+  --input-border-color: #{$border-color};
+  --input-border-color-active: #{$border-color-active};
+  --input-border-color-error: #{$danger-emphasis};
 
 }

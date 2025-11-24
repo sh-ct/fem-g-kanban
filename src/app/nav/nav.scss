@@ -1,0 +1,47 @@
+@use "mixins";
+@use "variables" as *;
+
+.boards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  .boards-heading {
+    padding-inline-start: 2rem;
+  }
+}
+
+.nav {
+  padding-inline-end: 1.5rem;
+
+  &-item {
+    padding-inline-start: 2rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--nav-color);
+    border-start-end-radius: $border-radius-pill;
+    border-end-end-radius: $border-radius-pill;
+
+    @include mixins.hover {
+      background: var(--nav-background-hover);
+    }
+
+    &-active {
+      background: var(--nav-background-active);
+      color: var(--nav-color-active);
+
+      @include mixins.hover {
+        background: var(--nav-background-active-hover);
+        color: var(--nav-color-active);
+      }
+    }
+
+    &-create {
+      color: var(--nav-color-create);
+    }
+
+  }
+}
+

@@ -1,16 +1,17 @@
-@use "mixins" as *;
+@use "mixins";
+@use "variables" as *;
 
 .subtask {
   height: 2.5rem;
   background: var(--subtask-background);
-  border-radius: var(--border-radius);
+  border-radius: $border-radius;
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-weight: var(--font-bold);
+  font-weight: $font-bold;
   padding-inline: 1rem;
 
-  @include hover {
+  @include mixins.hover {
     background: var(--subtask-background-hover);
   }
 
@@ -23,7 +24,7 @@
 .subtask-completed {
   background: var(--subtask-background-checked);
 
-  @include hover {
+  @include mixins.hover {
     background: var(--subtask-background-checked-hover);
   }
 }

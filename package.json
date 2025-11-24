@@ -29,6 +29,11 @@
     "@angular/forms": "^21.0.0-next.0",
     "@angular/platform-browser": "^21.0.0-next.0",
     "@angular/router": "^21.0.0-next.0",
+    "@ngrx/effects": "^20.0.1",
+    "@ngrx/entity": "^20.0.1",
+    "@ngrx/operators": "^20.0.1",
+    "@ngrx/store": "^20.0.1",
+    "@ngrx/store-devtools": "^20.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -45,5 +50,20 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.9.2"
+  },
+  "overrides": {
+    "@ngrx/store": {
+      "@angular/common": "^21.0.0-next.0",
+      "@angular/core": "^21.0.0-next.0"
+    },
+    "@ngrx/store-devtools": {
+      "@angular/core": "^21.0.0-next.0"
+    },
+    "@ngrx/effects": {
+      "@angular/core": "^21.0.0-next.0"
+    },
+    "@ngrx/entity": {
+      "@angular/core": "^21.0.0-next.0"
+    }
   }
 }

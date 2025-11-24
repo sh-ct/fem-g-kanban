@@ -1,48 +1,51 @@
+@use "variables" as *;
+
 .text-body {
-  font-family: var(--plus-jakarta-sans), sans-serif;
-  font-size: var(--text-md);
-  font-weight: var(--font-body);
-  line-height: var(--line-lg);
+  font-family: $plus-jakarta-sans;
+  font-size: $text-md;
+  font-weight: $font-body;
+  line-height: $line-lg;
 }
 
 .text-accent {
-  font-weight: var(--font-bold);
-  font-size: var(--text-sm);
-  line-height: var(--line-sm);
+  font-weight: $font-bold;
+  font-size: $text-sm;
+  line-height: $line-sm;
 }
 
 .text-secondary-color {
-  color: var(--text-secondary);
+  color: $text-secondary;
 }
 
 .heading-1 {
-  font-weight: var(--font-bold);
-  font-size: var(--text-2xl);
-  line-height: var(--line-xl);
+  font-weight: $font-bold;
+  font-size: $text-2xl;
+  line-height: $line-xl;
 }
 
 .heading-2 {
-  font-weight: var(--font-bold);
-  font-size: var(--text-xl);
-  line-height: var(--line-lg);
+  font-weight: $font-bold;
+  font-size: $text-xl;
+  line-height: $line-lg;
 }
 
 .heading-3 {
-  font-weight: var(--font-bold);
-  font-size: var(--text-lg);
-  line-height: var(--line-md);
+  font-weight: $font-bold;
+  font-size: $text-lg;
+  line-height: $line-md;
 }
 
 .heading-4 {
-  font-weight: var(--font-bold);
-  font-size: var(--text-sm);
-  line-height: var(--line-sm);
-  letter-spacing: var(--kerning-lg);
+  font-weight: $font-bold;
+  font-size: $text-sm;
+  line-height: $line-sm;
+  letter-spacing: $kerning-lg;
+  color: $text-secondary;
 }
 
 .error-message {
-  color: var(--danger);
-  font-weight: var(--font-bold);
-  font-size: var(--text-sm);
-  line-height: var(--line-sm);
+  color: $danger;
+  font-weight: $font-bold;
+  font-size: $text-sm;
+  line-height: $line-sm;
 }

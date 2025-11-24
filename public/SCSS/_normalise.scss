@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 // Taken from TailwindCSS Preflight css reset
 // https://github.com/tailwindlabs/tailwindcss/blob/main/packages/tailwindcss/preflight.css
 
@@ -77,7 +79,7 @@ a {
 */
 b,
 strong {
-  font-weight: var(--font-bold);
+  font-weight: $font-bold;
 }
 
 
