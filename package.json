@@ -21,27 +21,27 @@
     ]
   },
   "private": true,
-  "packageManager": "npm@10.5.0",
+  "packageManager": "yarn@1.22.22",
   "dependencies": {
-    "@angular/common": "^21.0.0-next.0",
-    "@angular/compiler": "^21.0.0-next.0",
-    "@angular/core": "^21.0.0-next.0",
-    "@angular/forms": "^21.0.0-next.0",
-    "@angular/platform-browser": "^21.0.0-next.0",
-    "@angular/router": "^21.0.0-next.0",
-    "@ngrx/effects": "^20.0.1",
-    "@ngrx/entity": "^20.0.1",
-    "@ngrx/operators": "^20.0.1",
-    "@ngrx/store": "^20.0.1",
-    "@ngrx/store-devtools": "^20.0.1",
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/forms": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/router": "^21.0.0",
+    "@ngrx/effects": "^20.1.0",
+    "@ngrx/entity": "^20.1.0",
+    "@ngrx/operators": "^20.1.0",
+    "@ngrx/store": "^20.1.0",
+    "@ngrx/store-devtools": "^20.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular/build": "^21.0.0-next.7",
-    "@angular/cli": "^21.0.0-next.7",
-    "@angular/compiler-cli": "^21.0.0-next.0",
+    "@angular/build": "^21.0.0",
+    "@angular/cli": "^21.0.0",
+    "@angular/compiler-cli": "^21.0.0",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.12.0",
     "karma": "~6.4.0",
@@ -57,12 +57,6 @@
       "@angular/core": "^21.0.0-next.0"
     },
     "@ngrx/store-devtools": {
-      "@angular/core": "^21.0.0-next.0"
-    },
-    "@ngrx/effects": {
-      "@angular/core": "^21.0.0-next.0"
-    },
-    "@ngrx/entity": {
       "@angular/core": "^21.0.0-next.0"
     }
   }
