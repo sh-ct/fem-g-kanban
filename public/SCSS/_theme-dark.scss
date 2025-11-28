@@ -5,4 +5,15 @@
 
   --surface-page: #{$neutral-600};
   --surface-panel: #{$neutral-500};
+
+  --text-primary: #{$neutral-0};
+
+  // Subtask
+
+  --subtask-background: #{$neutral-600};
+
+  // Select
+
+  --select-overlay-background: #{$neutral-600};
+  --select-overlay-border-color: transparent;
 }

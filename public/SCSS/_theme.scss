@@ -9,6 +9,9 @@
   --surface-page: var(--surface-100);
   --surface-panel: var(--surface-0);
 
+  --text-primary: #{$neutral-800};
+  --text-secondary: #{$neutral-300};
+
 // Layout
 
   --header-height: 6rem;
@@ -24,7 +27,7 @@
   --nav-background-active-hover: #{$primary-emphasis};
   --nav-background-hover: var(--surface-page);
   --nav-backgounrd-create-hover: #{$primary-emphasis};
-  --nav-color: #{$text-secondary};
+  --nav-color: var(--text-secondary);
   --nav-color-active: var(--surface-page);
   --nav-color-create: #{$primary};
   --nav-theme-selector-background: var(--surface-page);
@@ -66,6 +69,10 @@
   --input-border-color: #{$border-color};
   --input-border-color-active: #{$border-color-active};
   --input-border-color-error: #{$danger-emphasis};
+
+// Select
+  --select-overlay-background: #{$neutral-0};
+  --select-overlay-border-color: var(--input-border-color);
 
 // Switch Toggle
 

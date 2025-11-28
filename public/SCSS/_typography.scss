@@ -5,6 +5,7 @@
   font-size: $text-md;
   font-weight: $font-body;
   line-height: $line-lg;
+  color: var(--text-primary);
 }
 
 .text-accent {
@@ -14,7 +15,7 @@
 }
 
 .text-secondary-color {
-  color: $text-secondary;
+  color: var(--text-secondary);
 }
 
 .heading-1 {
@@ -40,7 +41,7 @@
   font-size: $text-sm;
   line-height: $line-sm;
   letter-spacing: $kerning-lg;
-  color: $text-secondary;
+  color: var(--text-secondary);
 }
 
 .error-message {

@@ -30,9 +30,10 @@
     left: 0;
     right: 0;
 
-    background: $neutral-0;
+    background: var(--select-overlay-background);
 
-    @include mixins.border($border-color: var(--input-border-color));
+    // TODO Change this to a variable and remove it in dark mode
+    @include mixins.border($border-color: var(--select-overlay-border-color));
 
     &-visible {
       display: block;

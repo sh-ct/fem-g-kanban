@@ -8,10 +8,21 @@ import { Store } from '@ngrx/store';
 import { initNav } from '../state/boards/boards.actions';
 import { Icon } from './icon/icon';
 import { Theme } from './services/theme';
+import { Checkbox } from './checkbox/checkbox';
+import { Input } from './input/input';
+import { Select } from './select/select';
+import { Subtask } from './subtask/subtask';
 
 @Component({
   selector: 'app-root',
-  imports: [ FormsModule, Header, Sidebar, NgOptimizedImage, Board, Icon ],
+  imports: [
+    FormsModule,
+    Header,
+    Sidebar,
+    NgOptimizedImage,
+    Board,
+    Icon,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
