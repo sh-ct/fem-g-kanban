@@ -1,0 +1,8 @@
+@use "variables" as *;
+
+.theme-dark {
+  //--surface-0: #{$neutral-800};
+
+  --surface-page: #{$neutral-600};
+  --surface-panel: #{$neutral-500};
+}

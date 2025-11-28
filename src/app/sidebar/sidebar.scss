@@ -21,7 +21,7 @@
   cursor: pointer;
 
   @include hover {
-    background: var.$neutral-100;
+    background: var(--surface-page);
   }
 }
 

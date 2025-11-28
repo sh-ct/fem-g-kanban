@@ -1,6 +1,6 @@
 import { Component, computed, input } from '@angular/core';
 
-export type IconType = 'board'|'sidebar-hide'|'sidebar-show';
+export type IconType = 'board'|'sidebar-hide'|'sidebar-show'|'dark-theme'|'light-theme';
 
 @Component({
   selector: 'app-icon',
@@ -18,7 +18,7 @@ export class Icon {
       secondary: '#828FA3',
       primary: '#635fc7',
       white: '#ffffff',
-    }[this.theme()]
+    }[this.theme()];
   });
 
 }

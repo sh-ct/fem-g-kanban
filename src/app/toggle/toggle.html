@@ -1,0 +1,10 @@
+<label class="toggle" [for]="id()">
+  <input
+    [id]="id()"
+    class="toggle-input"
+    type="checkbox"
+    [(ngModel)]="checked"
+    [disabled]="disabled()"
+  />
+  <div class="toggle-slider"></div>
+</label>

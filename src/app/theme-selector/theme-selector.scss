@@ -1,0 +1,11 @@
+@use "variables"  as *;
+
+.theme-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.875rem;
+  background: var(--nav-theme-selector-background);
+  border-radius: $nav-theme-selector-border-radius;
+  height: $nav-theme-selector-height;
+}

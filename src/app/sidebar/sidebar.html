@@ -7,11 +7,11 @@
   </div>
 
 
-  <div class="sidebar-ui sidebar-toggle text-secondary-color">
+  <div class="sidebar-ui sidebar-toggle text-secondary-color" (click)="hide.emit()">
 
     <app-icon type="sidebar-hide"/>
 
-    <span class="heading-3" (click)="hide.emit()">
+    <span class="heading-3">
       Hide Sidebar
     </span>
 

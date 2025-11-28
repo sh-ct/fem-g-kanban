@@ -9,6 +9,7 @@
 @use "../public/SCSS/fonts";
 @use "../public/SCSS/typography";
 @use "../public/SCSS/theme";
+@use "../public/SCSS/theme-dark";
 
 
 
@@ -16,6 +17,7 @@
 
 body {
   @extend .text-body;
+  background: var(--surface-page);
 }
 
 

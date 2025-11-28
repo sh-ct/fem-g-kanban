@@ -1,8 +1,8 @@
 <div class="page" [class.sidebar-hidden]="!isSidebarShown()">
 
-  <div class="logo-wrapper">
+  <div class="logo-wrapper" [class.sidebar-hidden]="!isSidebarShown()">
     <img
-      [ngSrc]="'logo-dark.svg'"
+      [ngSrc]="theme.darkMode() ? 'logo-light.svg' : 'logo-dark.svg'"
       width="153"
       height="26"
       alt="vertical lines and the word Kanban"

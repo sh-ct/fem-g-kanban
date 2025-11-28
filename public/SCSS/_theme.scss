@@ -6,6 +6,9 @@
   --surface-100: #{$neutral-100};
   --surface-200: #{$neutral-200};
 
+  --surface-page: var(--surface-100);
+  --surface-panel: var(--surface-0);
+
 // Layout
 
   --header-height: 6rem;
@@ -19,15 +22,16 @@
 
   --nav-background-active: #{$primary};
   --nav-background-active-hover: #{$primary-emphasis};
-  --nav-background-hover: #{$neutral-100};
+  --nav-background-hover: var(--surface-page);
   --nav-backgounrd-create-hover: #{$primary-emphasis};
   --nav-color: #{$text-secondary};
-  --nav-color-active: #{$neutral-0};
+  --nav-color-active: var(--surface-page);
   --nav-color-create: #{$primary};
+  --nav-theme-selector-background: var(--surface-page);
 
 // Checkbox
 
-  --checkbox-background: #{$neutral-0};
+  --checkbox-background: var(--surface-page);
   --checkbox-background-checked: #{$primary};
   --checkbox-background-disabled: #{$neutral-200};
   --checkbox-border-checked: #{$primary};
@@ -35,9 +39,9 @@
 
 // Subtask
 
-  --subtask-background: #{$neutral-100};
+  --subtask-background: var(--surface-page);
   --subtask-background-hover: #{$primary-not-emphasis};
-  --subtask-background-checked: #{$neutral-100};
+  --subtask-background-checked: var(--surface-page);
   --subtask-background-checked-hover: #{$primary-not-emphasis};
 
 // Button
@@ -45,7 +49,7 @@
   --btn-background-primary: #{$primary};
   --btn-background-hover-primary: #{$primary-emphasis};
   --btn-background-disabled-primary: #{$primary-not-emphasis};
-  --btn-color-primary: #{$neutral-0};
+  --btn-color-primary: var(--surface-page);
 
   --btn-background-secondary: #{$secondary-emphasis};
   --btn-background-hover-secondary: #{$secondary-emphasis};
@@ -55,7 +59,7 @@
   --btn-background-danger: #{$danger-emphasis};
   --btn-background-hover-danger: #{$danger-emphasis};
   --btn-background-disabled-danger: #{$danger-not-emphasis};
-  --btn-color-danger: #{$neutral-0};
+  --btn-color-danger: var(--surface-page);
 
 // Inputs
 
@@ -63,4 +67,10 @@
   --input-border-color-active: #{$border-color-active};
   --input-border-color-error: #{$danger-emphasis};
 
+// Switch Toggle
+
+  --toggle-background: #{$primary};
+  --toggle-background-checked: #{$primary};
+  --toggle-knob-background: var(--surface-page);
+  --toggle-height: #{$toggle-height};
 }

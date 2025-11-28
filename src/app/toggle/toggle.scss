@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+.toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggle-input {
+  display: none;
+
+  &:checked + .toggle-slider {
+    background: var(--toggle-background-checked);
+
+    &:before {
+      left: $toggle-knob-checked-offset;
+    }
+  }
+}
+
+.toggle-slider {
+  width: calc(#{$toggle-width} - (2 * #{$toggle-padding}));
+  height: calc(#{$toggle-height} - (2 * #{$toggle-padding}));
+  background: var(--toggle-background);
+  padding: $toggle-padding;
+  border-radius: $toggle-border-radius;
+  position: relative;
+  transition: $toggle-knob-transition;
+
+  box-sizing: content-box; // Override part of the normalise to make sixing easier
+
+  &:before {
+    content: '';
+    width: $toggle-knob-width;
+    height: $toggle-knob-height;
+    background: var(--toggle-knob-background);
+    position: absolute;
+    top: 50%;
+    left: $toggle-padding;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: $toggle-knob-transition;
+  }
+}

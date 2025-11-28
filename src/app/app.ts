@@ -7,6 +7,7 @@ import { Board } from './board/board';
 import { Store } from '@ngrx/store';
 import { initNav } from '../state/boards/boards.actions';
 import { Icon } from './icon/icon';
+import { Theme } from './services/theme';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ import { Icon } from './icon/icon';
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
-
+  theme = inject(Theme);
   store = inject(Store);
 
   isSidebarShown = signal(true);
@@ -38,4 +39,5 @@ export class App implements OnInit {
   hideSidebar(): void {
     this.isSidebarShown.set(false);
   }
+
 }
